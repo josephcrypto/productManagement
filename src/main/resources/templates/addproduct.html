@@ -24,11 +24,11 @@
         </div>
         <div class="panel-body">
             <form th:object="${product}" th:action="@{save}" action="#" method="post">
-                <div class="form-group">
+                <div class="form-group mx-sm-3 mb-2">
                     <label for="name">Name</label>
                     <input type="text" class="form-control" id="name" th:field="*{name}" placeholder="Name"/>
                 </div>
-                <div class="form-group">
+                <div class="form-group mx-sm-3 mb-2">
                     <label>Category</label>
                         <select class="form-control" th:field="*{category.categoryName}" style="width: 145px">
                         <option value="">Select Category</option>
@@ -38,12 +38,12 @@
                         </option>
                     </select>
                 </div>
-                <div class="form-group">
+                <div class="form-group mx-sm-3 mb-2">
                     <label for="quantity">Quantity</label>
                     <input type="text" class="form-control" id="quantity" th:field="*{quantity}"
                            placeholder="Quantity"/>
                 </div>
-                <div class="form-group">
+                <div class="form-group mx-sm-3 mb-2">
                     <label for="price">Price</label>
                     <input type="text" class="form-control" id="price" th:field="*{price}" placeholder="Price"/>
                 </div>
