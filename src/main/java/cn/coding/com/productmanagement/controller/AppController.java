@@ -29,7 +29,7 @@ public class AppController {
     private ProductService productService;
     private CategoryService categoryService;
     private int currentPage = 1;
-    private int pageSize = 5;
+    private int pageSize = 10;
     private static final Logger LOGGER = Logger.getLogger(AppController.class.getName());
 
     @Autowired
